@@ -11,3 +11,19 @@ print(zmienna3)
 print(zmienna4)
 print(zmienna5)
 print(liczby)
+
+# Komentarz
+# PEP8
+
+if zmienna1 == 5:
+    print(5)
+elif zmienna1 == 6:
+    print(6)
+elif zmienna1 == 7:
+    print(7)
+elif zmienna1 == 8:
+    print(8)
+elif zmienna1 == "Kot"
+    print ("Kot")
+else:
+    print("Nie miales racji")
