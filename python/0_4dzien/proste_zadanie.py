@@ -6,3 +6,4 @@ for zmienna in lista:
         print(zmienna, "BUZZ")
     if zmienna %3 == 0:
         print(zmienna, "FIZZ")
+    
