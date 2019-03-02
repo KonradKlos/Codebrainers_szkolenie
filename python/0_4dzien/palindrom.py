@@ -4,8 +4,8 @@
 #
 #
 tekst = "piotrrtoip"
-czy_palindrom = True
-for pozycja, sprawdzenie in enumerate(tekst):
+czy_palindrom = True #funkcja ta sprawdza, czy dany tekst JEST PALINDROMEM.
+for pozycja, sprawdzenie in enumerate(tekst): # pozycja, sprawdzenie - to pozycja każdej z liter, natomiast sprawdzenie (co ile) w tym wypadku co -1.
     if tekst[pozycja] == tekst[-pozycja-1]:
         pass
     else:
