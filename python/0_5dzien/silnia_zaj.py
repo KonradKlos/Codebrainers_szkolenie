@@ -3,5 +3,5 @@ def silnia(n):
     for liczba in range(2,n+1): #n+1, bo jesli podasz dowolną liczbę to na niej powinno się skończyć.
         wynik *= liczba
     return wynik
-wynik = silnia(3)
-print(wynik)
+wynik = silnia(10) # zmienna pomocnicza przyrównana jest do nazwy funkcji.
+print(wynik) #Pamiętaj o wyświetleniu wyniku!
