@@ -14,3 +14,5 @@ print(sredniawazona([3, 4], [4, 4])
 #3. Wyświetlanie na ekranie
 #4. Komunikaty
 #5. Pętla
+#6. Sprawdzanie poprawności danych
+#7. Ilość prób (ograniczona -> Prowadzi do Game Over)
