@@ -9,6 +9,8 @@ def sredniawazona(wartosci, wagi):
 print(sredniawazona([3, 4], [4, 4])
 
 #Brainstorming 
-1. Funkcja do losowania liczb z danego zakresu
-2. Wprowadzenie danych do programu przez użytkownika
-3. Wyświetlanie na ekranie
+#1. Funkcja do losowania liczb z danego zakresu
+#2. Wprowadzenie danych do programu przez użytkownika
+#3. Wyświetlanie na ekranie
+#4. Komunikaty
+#5. Pętla
