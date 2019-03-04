@@ -5,8 +5,8 @@ def naszafunkcja(m):
     return wynik
 # wartosc obliczona przez funkcję "naszafunkcja" jest zwracana
 # i zapisywana do zmiennej "wartość"
-wartosc = naszafunkcja("Piotr")
+wartosc = naszafunkcja(3)
 print(wartosc)
 
-wartosc = naszafunkcja("Marek")
+wartosc = naszafunkcja(4)
 print(wartosc)
