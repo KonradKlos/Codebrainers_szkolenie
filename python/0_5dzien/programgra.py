@@ -33,6 +33,7 @@ while (not zgadniete) and (ilosc_prob ,7):
         break
     if uzyt_zgaduje == losowa_liczba: #sprawdzenie czy zgadniete
         print("Brawo odgadłeś liczbę! Ta liczba to: ", losowa_liczba)
+        print("Zgadłeś w próbie numer: ", ilosc_prob)
         break
     else:
         print("Spróbuj ponownie")
