@@ -19,13 +19,29 @@ import random
 losowa_liczba = random.randint(0,100)
 
 zgadniete = False
-ilosc_prob = 0
-#Mozna komunikat- witaj w grze itp itd. Wszystko z printa.
-while (not zgadniete) and (ilosc_prob ,7): #Gdy warunek pierwszy nie bedzie spelniony to petla sie konczy.if __name__ == "__main__":
+ilosc_prob = 1
+imie = input("Wpisz swoje imię: ")
+print("WITAJ W GRZE!", imie)
+print("Musisz odgadnąć wylosowaną przez komputer liczbę w maksymalnie 7-miu krokach.")
+
+while (not zgadniete) and (ilosc_prob ,7):
     uzyt_zgaduje = input('Podaj liczbe: ')
     uzyt_zgaduje = int(uzyt_zgaduje)
-    #if uzyt_zgaduje == losowa_liczba - sprawdzenie czy zgadniete
-    #komunikat
+    if ilosc_prob >= int(7):
+        print("GAME OVER. Przekroczyłeś liczbę prób :( ")
+        print("Komputer wylosował liczbę: ", losowa_liczba)
+        break
+    if uzyt_zgaduje == losowa_liczba: #sprawdzenie czy zgadniete
+        print("Brawo odgadłeś liczbę! Ta liczba to: ", losowa_liczba)
+        break
+    else:
+        print("Spróbuj ponownie")
+        print("Liczba pozostałych prób: ", 7-(ilosc_prob))
+        ilosc_prob += 1
+        continue
+        
+
+
     #zmienic:zgadniete
     #zmienic: ilosc_prob
     # komunikat: statysyki ("Zgadłeś w 5 próbie")
