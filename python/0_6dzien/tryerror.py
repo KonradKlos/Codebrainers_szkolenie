@@ -13,7 +13,7 @@ except IndexError:
     print("Błędny parametr zadeklarowanej listy!")
 
 try:
-    slownik = ('Konrad', 'Bartek')
+    slownik = {'Konrad', 'Bartek'}
     print(slownik('Grzesiek'))
 except TypeError:
     print("Nie możesz modyfikować tupli!")
@@ -25,7 +25,7 @@ except NameError:
     print("Nazwa nie została zdefiniowana")
 
 try:
-    lista.append()
-    print(lista())
+    liczba = 10
+    liczba()
 except TypeError:
     print("Funkcja dodawania listy potrzebuje co najmniej jednego argumenty. Nie wpisałeś żadnego.")
