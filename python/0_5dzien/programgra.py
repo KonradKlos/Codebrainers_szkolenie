@@ -24,7 +24,7 @@ imie = input("Wpisz swoje imię: ")
 print("WITAJ W GRZE!", imie)
 print("Musisz odgadnąć wylosowaną przez komputer liczbę w maksymalnie 7-miu krokach.")
 
-while (not zgadniete) and (ilosc_prob ,7):
+while (not zgadniete):
     uzyt_zgaduje = input('Podaj liczbe: ')
     uzyt_zgaduje = int(uzyt_zgaduje)
     if ilosc_prob >= int(7):
