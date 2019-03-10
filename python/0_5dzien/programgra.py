@@ -23,25 +23,25 @@ ilosc_prob = 1
 imie = input("Wpisz swoje imię: ")
 print("WITAJ W GRZE!", imie)
 print("Musisz odgadnąć wylosowaną przez komputer liczbę w maksymalnie 7-miu krokach.")
-
-while (not zgadniete):
-    uzyt_zgaduje = input('Podaj liczbe: ')
-    uzyt_zgaduje = int(uzyt_zgaduje)
-    if ilosc_prob >= int(7):
-        print("GAME OVER. Przekroczyłeś liczbę prób :( ")
-        print("Komputer wylosował liczbę: ", losowa_liczba)
-        break
-    if uzyt_zgaduje == losowa_liczba: #sprawdzenie czy zgadniete
-        print("Brawo odgadłeś liczbę! Ta liczba to: ", losowa_liczba)
-        print("Zgadłeś w próbie numer: ", ilosc_prob)
-        break
-    else:
-        print("Spróbuj ponownie")
-        print("Liczba pozostałych prób: ", 7-(ilosc_prob))
-        ilosc_prob += 1
-        continue
-        
-
+try:
+    while (not zgadniete):
+        uzyt_zgaduje = input('Podaj liczbe: ')
+        uzyt_zgaduje = int(uzyt_zgaduje)
+        if ilosc_prob >= int(7):
+            print("GAME OVER. Przekroczyłeś liczbę prób :( ")
+            print("Komputer wylosował liczbę: ", losowa_liczba)
+            break
+        if uzyt_zgaduje == losowa_liczba: #sprawdzenie czy zgadniete
+            print("Brawo odgadłeś liczbę! Ta liczba to: ", losowa_liczba)
+            print("Zgadłeś w próbie numer: ", ilosc_prob)
+            break
+        else:
+            print("Spróbuj ponownie")
+            print("Liczba pozostałych prób: ", 7-(ilosc_prob))
+            ilosc_prob += 1
+            continue
+except KeyboardInterrupt:
+    print(" Przykro mi, że kończysz grę :(")
 
     #zmienic:zgadniete
     #zmienic: ilosc_prob
