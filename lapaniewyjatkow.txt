@@ -1,0 +1,28 @@
+06.03.2019
+try: 
+	pass # kod który spowoduje powstanie błędów
+	1 / 0
+	lista[123]
+	slownik['nieistniejacy_klucz']
+	lista.funkcja()
+	nie_istnieje()
+	obiekt.parametr()
+
+except ValueError: # ten blok można mnożyć w zależności od ilości błędów
+	print("Wystąpił problem")
+
+Po try oraz except pojawia się dwukropek i kolejne linie są od wcięcia. 
+
+Obsługa błędu w backendzie to bardzo ważna rzecz.
+
+raise ZeroDivisionError: division by zero
+
+try:
+	czy_adres_znaleziony()
+except AdresNieIstnieje():
+	wyswietl_strone_bledu()
+
+
+Przeanalizować raise Exception
+
+try: "Pakujemy" w lini, w której możemy spodziewać się wyjątku.
