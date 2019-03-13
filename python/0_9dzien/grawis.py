@@ -16,10 +16,9 @@ while (not zgadniete) and (ilosc_prob < 9):
     literki.append(uzyt_zgaduje)
     ilosc_prob += 1
     if uzyt_zgaduje.lower() not in losowe_haslo.lower():
-        
         nieudane_proby += 1
         print(szubienica(ilosc_prob))
     print("Dotychczasowe hasło wygląda następująco: ", maskowanie(losowe_haslo, literki))
     if nieudane_proby > 0:
         print(szubienica(ilosc_prob))
-print("Niestety, przegrałeś. Wylosowana nazwa filmu to: ", losowe_haslo)
+print("Niestety, przegrałeś. Wylosowana nazwa filmu to: ",(losowe_haslo))
