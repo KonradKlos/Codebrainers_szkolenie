@@ -27,6 +27,10 @@ for i in range(9):
         gracz = "o"
 
 
+#zmienic typ petli na while, zabezpieczamy sie przed trafieniem w zapelnione pole i wykorzystujemy do tego ifa .if
+#try + continue 
+#
+
 
 
 
