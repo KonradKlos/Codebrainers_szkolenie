@@ -15,9 +15,9 @@ with open ('przykladowy.csv', 'r') as f:
         scores.append(score)
 
         #3 Wypisz każdą listę, by można było sprawdzić
-minimalny_wynik = scores[0]
 minimalny_wynik_rok = years[0]
 maksymalny_wynik = scores[0]
+minimalny_wynik = scores[0]
 maksymalny_wynik_rok = years[0]
 
 for rok, wynik in zip(years, scores):
