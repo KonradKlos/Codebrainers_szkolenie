@@ -7,3 +7,4 @@ with open ('przykladowy.csv', 'r') as f:
         print (wiersz['Year'])
         print(wiersz['Score'])
         print(wiersz['Title'])
+        
