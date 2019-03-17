@@ -138,3 +138,16 @@ def maskowanie(haslo, literki):
             haslo_list[k] = '_'
 
     return "".join(haslo_list)
+
+
+def rysuj_tablice(tablica):
+    for x, wiersz in enumerate(tablica):
+        for y, v in enumerate(wiersz):
+            if not v.strip():
+                v = ' '
+            if y < len(wiersz) - 1:
+                print(v, '| ', end='')
+            else:
+                print(v)
+        if x < len(tablica) - 1:
+            print('-' * 9)
