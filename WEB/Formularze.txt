@@ -1,0 +1,4 @@
+Formularze.
+Skladaja sie z inputów.
+Checkbox(wiele wartosci do wyboru) badz radio (tylko jedna wartosc do wyboru).
+w3school - tam mozna znalezc bardzo duzo inputów.

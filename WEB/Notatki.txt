@@ -1,0 +1,3 @@
+Plik css zawsze linkujemy w sekcji HEAD.
+Plik js deklarujemy przed zamknieciem sekcji BODY.
+Warto dodac takze plik normalize.css (jest ogólnodostepny). Dostosowuje strone do kazdej przegladarki. 
