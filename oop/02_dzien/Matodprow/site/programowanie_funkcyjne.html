@@ -1,0 +1,721 @@
+
+
+
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      
+      
+      
+      
+        <meta name="lang:clipboard.copy" content="Copy to clipboard">
+      
+        <meta name="lang:clipboard.copied" content="Copied to clipboard">
+      
+        <meta name="lang:search.language" content="en">
+      
+        <meta name="lang:search.pipeline.stopwords" content="True">
+      
+        <meta name="lang:search.pipeline.trimmer" content="True">
+      
+        <meta name="lang:search.result.none" content="No matching documents">
+      
+        <meta name="lang:search.result.one" content="1 matching document">
+      
+        <meta name="lang:search.result.other" content="# matching documents">
+      
+        <meta name="lang:search.tokenizer" content="[\s\-]+">
+      
+      <link rel="shortcut icon" href="assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-4.1.1">
+    
+    
+      
+        <title>Programowanie funkcyjne - Język Python - rozszerzenie</title>
+      
+    
+    
+      <link rel="stylesheet" href="assets/stylesheets/application.3020aac5.css">
+      
+        <link rel="stylesheet" href="assets/stylesheets/application-palette.224b79ff.css">
+      
+      
+        
+        
+        <meta name="theme-color" content="#3f51b5">
+      
+    
+    
+      <script src="assets/javascripts/modernizr.01ccdecf.js"></script>
+    
+    
+      
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono">
+        <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
+      
+    
+    <link rel="stylesheet" href="assets/fonts/material-icons.css">
+    
+    
+    
+      
+    
+    
+  </head>
+  
+    
+    
+    <body dir="ltr" data-md-color-primary="indigo" data-md-color-accent="amber">
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
+    
+      <a href="#funkcje-anonimowe-lambda" tabindex="1" class="md-skip">
+        Skip to content
+      </a>
+    
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <a href="index.html" title="Język Python - rozszerzenie" class="md-header-nav__button md-logo">
+          
+            <i class="md-icon"></i>
+          
+        </a>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="__drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
+          
+            <span class="md-header-nav__topic">
+              Język Python - rozszerzenie
+            </span>
+            <span class="md-header-nav__topic">
+              Programowanie funkcyjne
+            </span>
+          
+        </div>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
+          
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query" data-md-state="active">
+      <label class="md-icon md-search__icon" for="__search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">
+        &#xE5CD;
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result">
+          <div class="md-search-result__meta">
+            Type to start searching
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+        
+      </div>
+      
+    </div>
+  </nav>
+</header>
+    
+    <div class="md-container">
+      
+        
+      
+      
+      <main class="md-main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="__drawer">
+    <a href="index.html" title="Język Python - rozszerzenie" class="md-nav__button md-logo">
+      
+        <i class="md-icon"></i>
+      
+    </a>
+    Język Python - rozszerzenie
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="index.html" title="Wstęp" class="md-nav__link">
+      Wstęp
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Programowanie funkcyjne
+      </label>
+    
+    <a href="programowanie_funkcyjne.html" title="Programowanie funkcyjne" class="md-nav__link md-nav__link--active">
+      Programowanie funkcyjne
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#funkcje-anonimowe-lambda" title="Funkcje anonimowe (lambda)" class="md-nav__link">
+    Funkcje anonimowe (lambda)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#filtrowanie-aplikowanie-redukowanie" title="Filtrowanie, aplikowanie, redukowanie" class="md-nav__link">
+    Filtrowanie, aplikowanie, redukowanie
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#filtrowanie" title="Filtrowanie" class="md-nav__link">
+    Filtrowanie
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#aplikowanie" title="Aplikowanie" class="md-nav__link">
+    Aplikowanie
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#redukowanie" title="Redukowanie" class="md-nav__link">
+    Redukowanie
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tworzenie-zbiorow-danych-w-locie" title="Tworzenie zbiorów danych w locie" class="md-nav__link">
+    Tworzenie zbiorów danych w locie
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#tworzenie-list-list-comprehension" title="Tworzenie list - list comprehension" class="md-nav__link">
+    Tworzenie list - list comprehension
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tworzenie-zbiorow" title="Tworzenie zbiorów" class="md-nav__link">
+    Tworzenie zbiorów
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tworzenie-sownikow" title="Tworzenie słowników" class="md-nav__link">
+    Tworzenie słowników
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#wyrazenia-generatorowe-generator-expressions" title="Wyrażenia generatorowe - generator expressions" class="md-nav__link">
+    Wyrażenia generatorowe - generator expressions
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="about.html" title="About" class="md-nav__link">
+      About
+    </a>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#funkcje-anonimowe-lambda" title="Funkcje anonimowe (lambda)" class="md-nav__link">
+    Funkcje anonimowe (lambda)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#filtrowanie-aplikowanie-redukowanie" title="Filtrowanie, aplikowanie, redukowanie" class="md-nav__link">
+    Filtrowanie, aplikowanie, redukowanie
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#filtrowanie" title="Filtrowanie" class="md-nav__link">
+    Filtrowanie
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#aplikowanie" title="Aplikowanie" class="md-nav__link">
+    Aplikowanie
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#redukowanie" title="Redukowanie" class="md-nav__link">
+    Redukowanie
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tworzenie-zbiorow-danych-w-locie" title="Tworzenie zbiorów danych w locie" class="md-nav__link">
+    Tworzenie zbiorów danych w locie
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#tworzenie-list-list-comprehension" title="Tworzenie list - list comprehension" class="md-nav__link">
+    Tworzenie list - list comprehension
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tworzenie-zbiorow" title="Tworzenie zbiorów" class="md-nav__link">
+    Tworzenie zbiorów
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tworzenie-sownikow" title="Tworzenie słowników" class="md-nav__link">
+    Tworzenie słowników
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#wyrazenia-generatorowe-generator-expressions" title="Wyrażenia generatorowe - generator expressions" class="md-nav__link">
+    Wyrażenia generatorowe - generator expressions
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                  <h1>Programowanie funkcyjne</h1>
+                
+                <h2 id="funkcje-anonimowe-lambda">Funkcje anonimowe (lambda)</h2>
+<p>Python umożliwia tworzenie funkcji w miejscu, bez osobnego deklarowania 
+ich. Takie funkcje nazywane są "anonimowe", bo nie muszą przyjmować nazw,
+a wykorzystuje się je często jako np. argumenty do "normalnych" funkcji.</p>
+<p>Podstawowa składania funkcji anonimowej jest następująca:</p>
+<div class="codehilite"><pre><span></span>lambda arg1, arg2: arg1 ** arg2
+       \--------/  \----------/
+        argumenty   operacja, której wynik jest zwracany przez funkcję
+</pre></div>
+
+<div class="admonition info">
+<p class="admonition-title">Podobieństwo do Excela</p>
+<p>Operacja funkcji lambda jest niemal identyczna jak zawartość funkcji
+w komórce w Excelu. Różnicą jest jedynie odwoływanie do zmiennych
+(Python) i nazw komórek (Excel).</p>
+</div>
+<p>Przykład funkcji anonimowej obliczającej przeciwprostokątną w trójkącie prostokątnym (twierdzenie Pitagorasa):</p>
+<div class="codehilite"><pre><span></span><span class="k">lambda</span> <span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">:</span>  <span class="p">((</span><span class="n">a</span> <span class="o">*</span> <span class="n">a</span><span class="p">)</span> <span class="o">+</span> <span class="p">(</span><span class="n">b</span> <span class="o">*</span> <span class="n">b</span><span class="p">))</span> <span class="o">**</span> <span class="mf">0.5</span>
+</pre></div>
+
+<div class="admonition info">
+<p class="admonition-title">Przypomnienie</p>
+<p>Twierdzenie Pitagorasa: <code>c*c = a*a + b*b</code>.</p>
+<p>Operator <code>**</code> to podnoszenie do potęgi. Jeśli wykładnik potęgi ma postać <code>1/n</code> (w powyższym przykładzie: <code>1/2</code>), to takie potęgowanie zamienia się w pierwiastkowanie o stopniu <code>n</code>.</p>
+</div>
+<p>Funkcje anonimowe są obiektami w Pythonie i dzięki temu możemy je przypisać w taki sam sposób, jak przypisanie wartości do zmiennej:</p>
+<div class="codehilite"><pre><span></span><span class="n">pitagoras</span> <span class="o">=</span> <span class="k">lambda</span> <span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">:</span>  <span class="p">((</span><span class="n">a</span> <span class="o">*</span> <span class="n">a</span><span class="p">)</span> <span class="o">+</span> <span class="p">(</span><span class="n">b</span> <span class="o">*</span> <span class="n">b</span><span class="p">))</span> <span class="o">**</span> <span class="mf">0.5</span>
+</pre></div>
+
+<p>Pozwala to w dalszym kodzie np. wywoływać taką funkcję anonimową po jej, de facto, nazwie:</p>
+<div class="codehilite"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">pitagoras</span> <span class="o">=</span> <span class="k">lambda</span> <span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">:</span>  <span class="p">((</span><span class="n">a</span> <span class="o">*</span> <span class="n">a</span><span class="p">)</span> <span class="o">+</span> <span class="p">(</span><span class="n">b</span> <span class="o">*</span> <span class="n">b</span><span class="p">))</span> <span class="o">**</span> <span class="mf">0.5</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">pitagoras</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">)</span>
+<span class="go">5.0</span>
+</pre></div>
+
+<div class="admonition question">
+<p class="admonition-title">Zadanie 1</p>
+<p>Napisz funkcję anonimową obliczającą kwadrat danej wartości. Czy potrafisz wytłumaczyć czym się to różni od wykorzystania funkcji <code>pow(a, b)</code> lub operatora <code>a ** b</code>?</p>
+</div>
+<div class="admonition question">
+<p class="admonition-title">Zadanie 2</p>
+<p>Napisz funkcję anonimową obliczającą średnią arytmetyczną dwóch wartości.</p>
+</div>
+<div class="admonition question">
+<p class="admonition-title">Zadanie 3</p>
+<p>Napisz funkcję anonimową sprawdzającą czy dana wartość jest większa (lub mniejsza) od pewnej wartości. Taka funkcja anonimowa powinna zwracać wartość logiczną.</p>
+</div>
+<hr />
+<h2 id="filtrowanie-aplikowanie-redukowanie">Filtrowanie, aplikowanie, redukowanie</h2>
+<p>W Pythonie istnieje kilka przydatnych funkcji wykorzystujących funkcje 
+anonimowe i pracujących na zbiorach danych:</p>
+<ol>
+<li><code>filter(funkcja, iterator)</code>: zwraca tylko te wartości ze zbioru danych,
+   dla których <code>funkcja(wartość)</code> zwróciła <code>True</code>.</li>
+<li><code>map(funkcja, iterator)</code>: aplikuje funkcję dla każdej wartości.</li>
+<li><code>reduce(funkcja, iterator)</code>: służy do zredukowania całego zbioru danych 
+   do jednej wartości.</li>
+</ol>
+<h3 id="filtrowanie">Filtrowanie</h3>
+<p>Dla przykładów użyję prostego zbioru danych temperatury:</p>
+<div class="codehilite"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">temperatury</span> <span class="o">=</span> <span class="p">[</span>
+<span class="go">    37.6, 35.8, 37.6, 33.4, 34.1, 37.1, 35.9, 34.1, 37.1, 40.5, 38.5, 37.6,</span>
+<span class="go">    35.8, 34.5, 36.4, 38.3, 37.5, 37.7, 34.0, 35.3, 35.7, 38.9, 34.8, 34.1,</span>
+<span class="go">    39.6, 35.4, 34.7, 37.6, 38.4, 36.4, 39.8, 39.1, 37.1, 35.6, 36.8, 37.6,</span>
+<span class="go">    36.7, 40.0, 38.0, 34.1, 35.5, 38.5, 36.1, 32.6, 32.9, 34.5, 41.0, 38.3,</span>
+<span class="go">    33.7, 38.7, 36.9, 36.2, 33.7, 38.3, 35.3, 38.3, 40.1, 39.3, 38.2, 37.6,</span>
+<span class="go">    39.1, 37.1, 34.4, 38.7, 35.8, 38.2, 38.2, 33.1, 37.8, 36.5, 37.6, 37.4,</span>
+<span class="go">    34.3, 37.7, 36.0, 37.5, 37.6, 36.5, 31.3, 37.7, 40.3, 39.5, 35.7, 38.1,</span>
+<span class="go">    34.7, 36.5, 34.3, 38.0, 37.0, 38.5, 39.4, 37.6, 41.7, 40.0, 38.4, 38.9,</span>
+<span class="go">    34.2, 40.2, 34.3, 35.3</span>
+<span class="go">]</span>
+</pre></div>
+
+<p>Użyjmy teraz funkcji filtrującej, żeby znaleźć wszystkie wartości większe
+lub równe <code>40.0</code>:</p>
+<div class="codehilite"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="nb">list</span><span class="p">(</span><span class="nb">filter</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">x</span><span class="o">&gt;=</span><span class="mf">40.0</span><span class="p">,</span>  <span class="n">temperatury</span><span class="p">))</span>
+<span class="go">[40.5, 40.0, 41.0, 40.1, 40.3, 41.7, 40.0, 40.2]</span>
+</pre></div>
+
+<div class="admonition question">
+<p class="admonition-title">Zadanie 4</p>
+<p>Znajdź wszystkie wartości mniejsze od <code>36.6</code>.</p>
+</div>
+<div class="admonition question">
+<p class="admonition-title">Zadanie 5</p>
+<p>Odfiltruj wszystkie wartości, które są mniejsze bądź równe 35 lub większe bądź równe 40.</p>
+</div>
+<h3 id="aplikowanie">Aplikowanie</h3>
+<p>Zacznijmy od znalezienia średniej wartości temperatury:</p>
+<div class="codehilite"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">statistics</span> <span class="kn">import</span> <span class="n">mean</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">sr_temp</span> <span class="o">=</span> <span class="n">mean</span><span class="p">(</span><span class="n">temperatury</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">sr_temp</span>
+<span class="go">36.9</span>
+</pre></div>
+
+<p>Teraz można łatwo obliczyć wartości odchylenia od średniej zbioru -
+przydatne w statystyce:</p>
+<div class="codehilite"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="nb">list</span><span class="p">(</span><span class="nb">map</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">x</span> <span class="o">-</span> <span class="n">sr_temp</span><span class="p">,</span> <span class="n">temperatury</span><span class="p">))</span>
+<span class="go">[0.7, -1.1, 0.7, -3.5, -2.8, 0.2, -1.0, -2.8, 0.2, 3.6, 1.6, 0.7, -1.1,</span>
+<span class="go"> -2.4, -0.5, 1.4, 0.6, 0.8, -2.9, -1.6, -1.2, 2.0, -2.1, -2.8, 2.7, -1.5, </span>
+<span class="go"> -2.2, 0.7, 1.5, -0.5, 2.9, 2.2, 0.2, -1.3, -0.1, 0.7, -0.2, 3.1, 1.1, </span>
+<span class="go"> -2.8, -1.4, 1.6, -0.8, -4.3, -4.0, -2.4, 4.1, 1.4, -3.2, 1.8, 0.0, -0.7, </span>
+<span class="go"> -3.2, 1.4, -1.6, 1.4, 3.2, 2.4, 1.3, 0.7, 2.2, 0.2, -2.5, 1.8, -1.1, 1.3, </span>
+<span class="go"> 1.3, -3.8, 0.9, -0.4, 0.7, 0.5, -2.6, 0.8, -0.9, 0.6, 0.7, -0.4, -5.6, </span>
+<span class="go"> 0.8, 3.4, 2.6, -1.2, 1.2, -2.2, -0.4, -2.6, 1.1, 0.1, 1.6, 2.5, 0.7, 4.8, </span>
+<span class="go"> 3.1, 1.5, 2.0, -2.7, 3.3, -2.6, -1.6]</span>
+</pre></div>
+
+<div class="admonition info">
+<p class="admonition-title">Format liczb zmiennoprzecinkowych</p>
+<p>Podczas testów powyższego kodu, Python potrafił zamiast wartości <code>0.7</code>
+zwrócić <code>0.7000000000000028</code>, dlatego dla uproszczonego zapisu
+wszystkie wartości zostały zaokrąglone do jednego miejsca po przecinku.</p>
+</div>
+<div class="admonition question">
+<p class="admonition-title">Zadanie 6</p>
+<p>Oblicz dla każdej liczby w zbiorze temperatur kwadrat różnicy tej 
+liczby i średniej arytmetycznej całego zbioru.</p>
+</div>
+<h3 id="redukowanie">Redukowanie</h3>
+<p>Funkcja <code>reduce</code> z modułu <code>functools</code> pomaga w iteratywnym redukowaniu 
+zbioru wartości do jednej wartości. Żeby to lepiej zobrazować, pokażę dwa 
+przykłady użycia <code>reduce</code> do obliczenia sumy wartości i ich iloczynu.</p>
+<p>Przykład 1: obliczenie sumy</p>
+<div class="codehilite"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">functools</span> <span class="kn">import</span> <span class="nb">reduce</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">reduce</span><span class="p">(</span><span class="k">lambda</span> <span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">:</span> <span class="n">a</span> <span class="o">+</span> <span class="n">b</span><span class="p">,</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">])</span>
+<span class="go">15</span>
+</pre></div>
+
+<p>Wykorzystanie funkcji <code>reduce</code> w powyższym przykładzie sprowadza się tak
+naprawdę do:</p>
+<p><code>((((1 + 2) + 3) + 4) + 5)</code></p>
+<p>Przykład 2: obliczenie iloczynu</p>
+<div class="codehilite"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="nb">reduce</span><span class="p">(</span><span class="k">lambda</span> <span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">:</span> <span class="n">a</span> <span class="o">*</span> <span class="n">b</span><span class="p">,</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">])</span>
+<span class="go">24</span>
+</pre></div>
+
+<p>Sprowadza się to do: <code>(((1 * 2) * 3) * 4)</code>.</p>
+<div class="admonition question">
+<p class="admonition-title">Zadanie 7</p>
+<p>Mając obliczone wartości odchyleń temperatur od średniej temperatury, oblicz <a href="https://www.matemaks.pl/wariancja.html">wariancję</a> tych wartości. Nie zapomnij o podzieleniu przez ilość elementów w zbiorze!</p>
+</div>
+<hr />
+<h2 id="tworzenie-zbiorow-danych-w-locie">Tworzenie zbiorów danych w locie</h2>
+<h3 id="tworzenie-list-list-comprehension">Tworzenie list - <em>list comprehension</em></h3>
+<p>Dzięki generowaniu list w locie możemy nawet dość skomplikowane pętle 
+zamienić na pojedyncze linijki kodu.</p>
+<p>Przykładowo 4 linijki kodu generujące listę sześcianów.</p>
+<div class="codehilite"><pre><span></span><span class="n">szesciany</span> <span class="o">=</span> <span class="p">[]</span>
+
+<span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">10</span><span class="p">):</span>
+    <span class="n">szesciany</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">x</span><span class="o">**</span><span class="mi">3</span><span class="p">)</span>
+</pre></div>
+
+<p>W podstawowej wersji możemy "przenieść" pętlę do nawiasów kwadratowych:</p>
+<div class="codehilite"><pre><span></span><span class="n">szesciany</span> <span class="o">=</span> <span class="p">[</span><span class="n">x</span><span class="o">**</span><span class="mi">3</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">10</span><span class="p">)]</span>
+</pre></div>
+
+<p>Ogólniejsza postać <em>list comprehension</em>:</p>
+<div class="codehilite"><pre><span></span><span class="n">nowa_lista</span> <span class="o">=</span> <span class="p">[</span><span class="n">funkcja</span><span class="p">(</span><span class="n">element</span><span class="p">)</span> <span class="k">for</span> <span class="n">element</span> <span class="ow">in</span> <span class="n">lista</span> <span class="k">if</span> <span class="n">warunek</span><span class="p">(</span><span class="n">element</span><span class="p">)]</span>
+</pre></div>
+
+<p>Na przykład by przygotować listę kwadratów liczb nieparzystych z zakresu od 1 do 100:</p>
+<div class="codehilite"><pre><span></span><span class="n">kwadraty</span> <span class="o">=</span> <span class="p">[</span><span class="n">el</span><span class="o">**</span><span class="mi">2</span> <span class="k">for</span> <span class="n">el</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">101</span><span class="p">)</span> <span class="k">if</span> <span class="n">el</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">==</span> <span class="mi">0</span><span class="p">]</span>
+</pre></div>
+
+<div class="admonition question">
+<p class="admonition-title">Zadanie 1</p>
+<p>Napisz pogram, który policzy kwadraty liczb z zakresu [1,10000], które 
+podzielne są przez 5 lub 9. Następnie sprawdź, które z uzyskanych 
+liczb są podzielne zarówno przez 5 jak i przez 9.</p>
+</div>
+<h3 id="tworzenie-zbiorow">Tworzenie zbiorów</h3>
+<p>W podobny sposób można też przygotować zbiór.</p>
+<div class="codehilite"><pre><span></span><span class="n">zbior</span> <span class="o">=</span> <span class="p">{</span><span class="n">znak</span> <span class="k">for</span> <span class="n">znak</span> <span class="ow">in</span> <span class="s2">&quot;abracadabra&quot;</span> <span class="k">if</span> <span class="n">znak</span> <span class="ow">not</span> <span class="ow">in</span> <span class="s2">&quot;abc&quot;</span><span class="p">}</span> 
+</pre></div>
+
+<div class="admonition question">
+<p class="admonition-title">Zadanie 2</p>
+<p>Stwórz zbiór, który wypełnisz 30 wywołaniami funkcji
+<code>random.randint(1, 30)</code>. Ile razy wylosowana została ta sama wartość?
+(Sprawdzisz to porównując ilość elementów zbioru). Jak się zachowa 
+program, jeśli zmienisz argumenty do funkcji <code>randint</code>? A jeśli 
+zmienisz ilość wywołań tej funkcji?</p>
+</div>
+<h3 id="tworzenie-sownikow">Tworzenie słowników</h3>
+<p>Podobnie można stworzyć słownik:</p>
+<div class="codehilite"><pre><span></span><span class="n">tekst</span> <span class="o">=</span> <span class="s2">&quot;abracadabra&quot;</span>
+<span class="n">wystapienia</span> <span class="o">=</span> <span class="p">{</span><span class="n">znak</span><span class="p">:</span> <span class="n">tekst</span><span class="o">.</span><span class="n">count</span><span class="p">(</span><span class="n">znak</span><span class="p">)</span> <span class="k">for</span> <span class="n">znak</span> <span class="ow">in</span> <span class="n">tekst</span><span class="p">}</span>
+</pre></div>
+
+<hr />
+<h2 id="wyrazenia-generatorowe-generator-expressions">Wyrażenia generatorowe - <em>generator expressions</em></h2>
+<p>Co do zapisu: nie różnią się niczym od <em>list comprehension</em>, poza zmianą 
+znaków nawiasa z <code>[]</code> na <code>()</code>:</p>
+<div class="codehilite"><pre><span></span><span class="n">list_comp</span> <span class="o">=</span> <span class="p">[</span><span class="n">x</span> <span class="o">**</span> <span class="mf">0.5</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">11</span><span class="p">)]</span>
+<span class="n">gen_expr</span> <span class="o">=</span> <span class="p">(</span><span class="n">x</span> <span class="o">**</span> <span class="mf">0.5</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">11</span><span class="p">))</span>
+</pre></div>
+
+<p>Różnica polega na tym, że <em>list comprehension</em> tworzy listę, a więc zajmuje
+miejsce w pamięci i czas procesora. Wyrażenie generatorowe jest dopiero 
+obliczane przy przechodzeniu przez nie, np. w formie pętli <code>for</code>:</p>
+<div class="codehilite"><pre><span></span><span class="n">gen_expr</span> <span class="o">=</span> <span class="p">(</span><span class="n">x</span> <span class="o">**</span> <span class="mf">0.5</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">10000001</span><span class="p">))</span>
+<span class="c1"># gen_expr nie obliczyło jeszcze tych 10 milionów pierwiastków</span>
+
+<span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">gen_expr</span><span class="p">:</span>
+    <span class="c1"># teraz już kolejne elementy wyrażenia generatorowego są obliczane</span>
+    <span class="k">print</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+</pre></div>
+                
+                  
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href="index.html" title="Wstęp" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                Wstęp
+              </span>
+            </div>
+          </a>
+        
+        
+          <a href="about.html" title="About" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                About
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        powered by
+        <a href="https://www.mkdocs.org">MkDocs</a>
+        and
+        <a href="https://squidfunk.github.io/mkdocs-material/">
+          Material for MkDocs</a>
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="assets/javascripts/application.dc02f8ce.js"></script>
+      
+      <script>app.initialize({version:"1.0.4",url:{base:"."}})</script>
+      
+    
+  </body>
+</html>
