@@ -1,0 +1,709 @@
+
+
+
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      
+      
+      
+      
+        <meta name="lang:clipboard.copy" content="Copy to clipboard">
+      
+        <meta name="lang:clipboard.copied" content="Copied to clipboard">
+      
+        <meta name="lang:search.language" content="en">
+      
+        <meta name="lang:search.pipeline.stopwords" content="True">
+      
+        <meta name="lang:search.pipeline.trimmer" content="True">
+      
+        <meta name="lang:search.result.none" content="No matching documents">
+      
+        <meta name="lang:search.result.one" content="1 matching document">
+      
+        <meta name="lang:search.result.other" content="# matching documents">
+      
+        <meta name="lang:search.tokenizer" content="[\s\-]+">
+      
+      <link rel="shortcut icon" href="assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-4.1.1">
+    
+    
+      
+        <title>Zaawansowana obiektowość - Język Python - rozszerzenie</title>
+      
+    
+    
+      <link rel="stylesheet" href="assets/stylesheets/application.3020aac5.css">
+      
+        <link rel="stylesheet" href="assets/stylesheets/application-palette.224b79ff.css">
+      
+      
+        
+        
+        <meta name="theme-color" content="#3f51b5">
+      
+    
+    
+      <script src="assets/javascripts/modernizr.01ccdecf.js"></script>
+    
+    
+      
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono">
+        <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
+      
+    
+    <link rel="stylesheet" href="assets/fonts/material-icons.css">
+    
+    
+    
+      
+    
+    
+  </head>
+  
+    
+    
+    <body dir="ltr" data-md-color-primary="indigo" data-md-color-accent="amber">
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
+    
+      <a href="#zaawansowane-kwestie-oop" tabindex="1" class="md-skip">
+        Skip to content
+      </a>
+    
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <a href="index.html" title="Język Python - rozszerzenie" class="md-header-nav__button md-logo">
+          
+            <i class="md-icon"></i>
+          
+        </a>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="__drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
+          
+            <span class="md-header-nav__topic">
+              Język Python - rozszerzenie
+            </span>
+            <span class="md-header-nav__topic">
+              Zaawansowana obiektowość
+            </span>
+          
+        </div>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
+          
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query" data-md-state="active">
+      <label class="md-icon md-search__icon" for="__search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">
+        &#xE5CD;
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result">
+          <div class="md-search-result__meta">
+            Type to start searching
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+        
+      </div>
+      
+    </div>
+  </nav>
+</header>
+    
+    <div class="md-container">
+      
+        
+      
+      
+      <main class="md-main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="__drawer">
+    <a href="index.html" title="Język Python - rozszerzenie" class="md-nav__button md-logo">
+      
+        <i class="md-icon"></i>
+      
+    </a>
+    Język Python - rozszerzenie
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="index.html" title="Wstęp" class="md-nav__link">
+      Wstęp
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="programowanie_funkcyjne.html" title="Programowanie funkcyjne" class="md-nav__link">
+      Programowanie funkcyjne
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="obiekty.html" title="Obiekty" class="md-nav__link">
+      Obiekty
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="klasy.html" title="Klasy" class="md-nav__link">
+      Klasy
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="dziedziczenie.html" title="Dziedziczenie" class="md-nav__link">
+      Dziedziczenie
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Zaawansowana obiektowość
+      </label>
+    
+    <a href="zaawansowane_oop.html" title="Zaawansowana obiektowość" class="md-nav__link md-nav__link--active">
+      Zaawansowana obiektowość
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#zaawansowane-kwestie-oop" title="Zaawansowane kwestie OOP" class="md-nav__link">
+    Zaawansowane kwestie OOP
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#interfejsy-i-introspekcja" title="Interfejsy i introspekcja" class="md-nav__link">
+    Interfejsy i introspekcja
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#skadowe-prywatne-klasy" title="Składowe prywatne klasy" class="md-nav__link">
+    Składowe prywatne klasy
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#skadowe-statyczne" title="Składowe statyczne" class="md-nav__link">
+    Składowe statyczne
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#wasciwosci" title="Właściwości" class="md-nav__link">
+    Właściwości
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#atrybuty-specjalne" title="Atrybuty specjalne" class="md-nav__link">
+    Atrybuty specjalne
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#metody-specjalne" title="Metody specjalne" class="md-nav__link">
+    Metody specjalne
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="about.html" title="About" class="md-nav__link">
+      About
+    </a>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#zaawansowane-kwestie-oop" title="Zaawansowane kwestie OOP" class="md-nav__link">
+    Zaawansowane kwestie OOP
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#interfejsy-i-introspekcja" title="Interfejsy i introspekcja" class="md-nav__link">
+    Interfejsy i introspekcja
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#skadowe-prywatne-klasy" title="Składowe prywatne klasy" class="md-nav__link">
+    Składowe prywatne klasy
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#skadowe-statyczne" title="Składowe statyczne" class="md-nav__link">
+    Składowe statyczne
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#wasciwosci" title="Właściwości" class="md-nav__link">
+    Właściwości
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#atrybuty-specjalne" title="Atrybuty specjalne" class="md-nav__link">
+    Atrybuty specjalne
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#metody-specjalne" title="Metody specjalne" class="md-nav__link">
+    Metody specjalne
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                  <h1>Zaawansowana obiektowość</h1>
+                
+                <h2 id="zaawansowane-kwestie-oop">Zaawansowane kwestie OOP</h2>
+<h3 id="interfejsy-i-introspekcja">Interfejsy i introspekcja</h3>
+<p>Istnieje możliwość sprawdzania charakterystyk klas i obiektów w trakcie 
+działania programu.</p>
+<div class="codehilite"><pre><span></span><span class="o">&gt;&gt;&gt;</span> <span class="nb">issubclass</span><span class="p">(</span><span class="n">Pochodna</span><span class="p">,</span> <span class="n">A</span><span class="p">)</span>
+<span class="bp">True</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="nb">issubclass</span><span class="p">(</span><span class="n">B</span><span class="p">,</span> <span class="n">Pochodna</span><span class="p">)</span>
+<span class="bp">False</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">Pochodna</span><span class="o">.</span><span class="vm">__bases__</span>
+<span class="p">(</span><span class="o">&lt;</span><span class="k">class</span> <span class="err">&#39;</span><span class="nc">__main__</span><span class="o">.</span><span class="sa">B</span><span class="s1">&#39;&gt;, &lt;class &#39;</span><span class="n">__main__</span><span class="o">.</span><span class="n">A</span><span class="s1">&#39;&gt;)</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">d</span> <span class="o">=</span> <span class="n">Pochodna</span><span class="p">()</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">d</span><span class="p">,</span> <span class="n">A</span><span class="p">)</span>
+<span class="bp">True</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="nb">hasattr</span><span class="p">(</span><span class="n">d</span><span class="p">,</span> <span class="s2">&quot;fa&quot;</span><span class="p">)</span>
+<span class="bp">True</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="nb">callable</span><span class="p">(</span><span class="nb">getattr</span><span class="p">(</span><span class="n">d</span><span class="p">,</span> <span class="s2">&quot;fa&quot;</span><span class="p">,</span> <span class="bp">None</span><span class="p">))</span>
+<span class="bp">True</span>
+</pre></div>
+
+<h3 id="skadowe-prywatne-klasy">Składowe prywatne klasy</h3>
+<p>Wszystkie atrybuty i metody zdefiniowane w klasie są publiczne.
+Aby ukryć atrybut lub metodę przed dostępem spoza klasy (składowa private) należy jej nazwę poprzedzić dwoma podkreślnikami (np.  <code>__atrybut</code>).</p>
+<div class="codehilite"><pre><span></span><span class="k">class</span> <span class="nc">KontoBankowe</span><span class="p">:</span>
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">nazwa</span><span class="p">,</span> <span class="n">stan</span><span class="o">=</span><span class="mi">0</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">nazwa</span> <span class="o">=</span> <span class="n">nazwa</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">__stan</span> <span class="o">=</span> <span class="n">stan</span>
+
+    <span class="k">def</span> <span class="nf">info</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">print</span><span class="p">(</span><span class="s2">&quot;nazwa:&quot;</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">nazwa</span><span class="p">)</span>
+        <span class="k">print</span><span class="p">(</span><span class="s2">&quot;stan:&quot;</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">__stan</span><span class="p">)</span>
+
+    <span class="k">def</span> <span class="nf">wyplac</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">ilosc</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">__stan</span> <span class="o">-=</span> <span class="n">ilosc</span>
+
+    <span class="k">def</span> <span class="nf">wplac</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">ilosc</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">__stan</span> <span class="o">+=</span> <span class="n">ilosc</span>
+
+<span class="n">jk</span> <span class="o">=</span> <span class="n">KontoBankowe</span><span class="p">(</span><span class="s2">&quot;Kowalski&quot;</span><span class="p">,</span> <span class="mi">1000</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="n">jk</span><span class="o">.</span><span class="n">stan</span><span class="p">)</span>                <span class="c1"># Błąd!</span>
+<span class="k">print</span><span class="p">(</span><span class="n">jk</span><span class="o">.</span><span class="n">__stan</span><span class="p">)</span>              <span class="c1"># Błąd!</span>
+<span class="k">print</span><span class="p">(</span><span class="n">jk</span><span class="o">.</span><span class="n">_KontoBankowe__stan</span><span class="p">)</span> <span class="c1"># OK</span>
+</pre></div>
+
+<h3 id="skadowe-statyczne">Składowe statyczne</h3>
+<p>Składowe statyczne są wspólne dla wszystkich instancji klasy.</p>
+<div class="codehilite"><pre><span></span><span class="k">class</span> <span class="nc">CountedObject</span><span class="p">:</span>
+    <span class="n">__count</span> <span class="o">=</span> <span class="mi">0</span>   <span class="c1"># Statyczna skladowa</span>
+
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="n">CountedObject</span><span class="o">.</span><span class="n">__count</span> <span class="o">+=</span> <span class="mi">1</span>
+
+    <span class="nd">@staticmethod</span>
+    <span class="k">def</span> <span class="nf">staticGetCount</span><span class="p">():</span>
+        <span class="k">return</span> <span class="n">CountedObject</span><span class="o">.</span><span class="n">__count</span>
+
+    <span class="nd">@classmethod</span>
+    <span class="k">def</span> <span class="nf">classGetCount</span><span class="p">(</span><span class="bp">cls</span><span class="p">):</span>
+        <span class="k">print</span><span class="p">(</span><span class="s2">&quot;classGetCount invoked for instance of&quot;</span><span class="p">,</span> <span class="bp">cls</span><span class="p">)</span>
+        <span class="k">return</span> <span class="bp">cls</span><span class="o">.</span><span class="n">__count</span>
+
+<span class="k">print</span><span class="p">(</span><span class="s2">&quot;Number of objects: </span><span class="si">%s</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="n">CountedObject</span><span class="o">.</span><span class="n">staticGetCount</span><span class="p">())</span>
+<span class="k">print</span><span class="p">(</span><span class="s2">&quot;Creating objects...&quot;</span><span class="p">)</span>
+
+<span class="n">c1</span> <span class="o">=</span> <span class="n">CountedObject</span><span class="p">()</span>
+<span class="n">c2</span> <span class="o">=</span> <span class="n">CountedObject</span><span class="p">()</span>
+<span class="n">cs</span> <span class="o">=</span> <span class="p">[</span><span class="n">CountedObject</span><span class="p">(),</span> <span class="n">CountedObject</span><span class="p">()]</span>
+
+<span class="k">print</span><span class="p">(</span><span class="s2">&quot;Number of objects: </span><span class="si">%s</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="n">CountedObject</span><span class="o">.</span><span class="n">staticGetCount</span><span class="p">())</span>
+<span class="k">print</span><span class="p">(</span><span class="s2">&quot;Number of objects: </span><span class="si">%s</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="n">CountedObject</span><span class="o">.</span><span class="n">classGetCount</span><span class="p">())</span>
+</pre></div>
+
+<p>Działanie:</p>
+<div class="codehilite"><pre><span></span>Number of objects: 0
+Creating objects...
+Number of objects: 4
+classGetCount invoked for instance of &lt;class &#39;__main__.CountedObject&#39;&gt;
+</pre></div>
+
+<h3 id="wasciwosci">Właściwości</h3>
+<p>Właściwości (nie mylić z atrybutami!), zwane również jako gettery
+i settery, umożliwiają enkapsulację obiektu. Są odpowiednikiem metod 
+dostępowych.</p>
+<div class="codehilite"><pre><span></span><span class="k">class</span> <span class="nc">Rectangle</span><span class="p">:</span>
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">width</span> <span class="o">=</span> <span class="mi">0</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">height</span> <span class="o">=</span> <span class="mi">0</span>
+
+    <span class="k">def</span> <span class="nf">setSize</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">size</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">width</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">height</span> <span class="o">=</span> <span class="n">size</span>
+
+    <span class="k">def</span> <span class="nf">getSize</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">width</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">height</span>
+
+    <span class="n">size</span> <span class="o">=</span> <span class="nb">property</span><span class="p">(</span><span class="n">getSize</span><span class="p">,</span> <span class="n">setSize</span><span class="p">)</span>
+</pre></div>
+
+<p>Przykład użycia:</p>
+<div class="codehilite"><pre><span></span><span class="o">&gt;&gt;&gt;</span> <span class="n">r</span> <span class="o">=</span> <span class="n">Rectangle</span><span class="p">()</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">r</span><span class="o">.</span><span class="n">width</span> <span class="o">=</span> <span class="mi">10</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">r</span><span class="o">.</span><span class="n">height</span> <span class="o">=</span> <span class="mi">20</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">r</span><span class="o">.</span><span class="n">size</span>
+<span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">20</span><span class="p">)</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">r</span><span class="o">.</span><span class="n">size</span> <span class="o">=</span> <span class="mi">150</span><span class="p">,</span> <span class="mi">100</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">r</span><span class="o">.</span><span class="n">height</span>
+<span class="mi">100</span>
+</pre></div>
+
+<p>Istnieje możliwość definiowania właściwości typu "read-only". Poniżej 
+przykład konta bankowego, w którym można odczytać stan konta, ale nie 
+można go zmienić.</p>
+<div class="codehilite"><pre><span></span><span class="k">class</span> <span class="nc">BankAccount</span><span class="p">:</span>
+    <span class="n">counter</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">owner</span><span class="p">,</span> <span class="n">balance</span><span class="o">=</span><span class="mi">0</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">owner</span> <span class="o">=</span> <span class="n">owner</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">__balance</span> <span class="o">=</span> <span class="n">balance</span>
+        <span class="n">BankAccount</span><span class="o">.</span><span class="n">counter</span> <span class="o">+=</span> <span class="mi">1</span>
+
+    <span class="k">def</span> <span class="nf">__getBalance</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">__balance</span>
+
+    <span class="n">balance</span> <span class="o">=</span> <span class="nb">property</span><span class="p">(</span><span class="n">__getBalance</span><span class="p">)</span>
+</pre></div>
+
+<p>Użycie:</p>
+<p><div class="codehilite"><pre><span></span><span class="o">&gt;&gt;&gt;</span> <span class="n">ba</span> <span class="o">=</span> <span class="n">BankAccount</span><span class="p">(</span><span class="s2">&quot;jk&quot;</span><span class="p">,</span> <span class="mi">100</span><span class="p">)</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">ba</span><span class="o">.</span><span class="n">balance</span>
+<span class="mi">100</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">ba</span><span class="o">.</span><span class="n">balance</span> <span class="o">=</span> <span class="mi">100</span> <span class="c1"># Błąd!</span>
+</pre></div>
+ </p>
+<h3 id="atrybuty-specjalne">Atrybuty specjalne</h3>
+<p>Instancje klas posiadają specjalne atrybuty, które opisują obiekty. ::</p>
+<div class="codehilite"><pre><span></span><span class="o">&gt;&gt;&gt;</span> <span class="n">ba</span> <span class="o">=</span> <span class="n">BankAccount</span><span class="p">(</span><span class="s2">&quot;Kowalski&quot;</span><span class="p">,</span> <span class="mi">1000</span><span class="p">)</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">ba</span><span class="o">.</span><span class="vm">__dict__</span>  <span class="c1"># Słownik zdefiniowanych przez użytkownika atrybutów</span>
+<span class="p">{</span><span class="s1">&#39;owner&#39;</span><span class="p">:</span> <span class="s1">&#39;Kowalski&#39;</span><span class="p">,</span> <span class="s1">&#39;_BankAccount__balance&#39;</span><span class="p">:</span> <span class="mi">1000</span><span class="p">}</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">ba</span><span class="o">.</span><span class="vm">__class__</span><span class="o">.</span><span class="vm">__name__</span>  <span class="c1"># Nazwa klasy</span>
+<span class="s1">&#39;BankAccount&#39;</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">ba</span><span class="o">.</span><span class="n">withdraw</span><span class="o">.</span><span class="vm">__name__</span>  <span class="c1"># Nazwa metody</span>
+<span class="s1">&#39;withdraw&#39;</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="p">[</span><span class="n">attrib</span> <span class="k">for</span> <span class="n">attrib</span> <span class="ow">in</span> <span class="nb">dir</span><span class="p">(</span><span class="n">ba</span><span class="p">)</span> <span class="k">if</span> <span class="ow">not</span> <span class="n">attrib</span><span class="o">.</span><span class="n">startswith</span><span class="p">(</span><span class="s1">&#39;_&#39;</span><span class="p">)]</span> <span class="c1"># Interfejs</span>
+<span class="p">[</span><span class="s1">&#39;counter&#39;</span><span class="p">,</span> <span class="s1">&#39;deposit&#39;</span><span class="p">,</span> <span class="s1">&#39;info&#39;</span><span class="p">,</span> <span class="s1">&#39;owner&#39;</span><span class="p">,</span> <span class="s1">&#39;withdraw&#39;</span><span class="p">]</span>
+</pre></div>
+
+<h3 id="metody-specjalne">Metody specjalne</h3>
+<p>Klasy umożliwiają przeładowywanie operatorów (podobnie jak w C++).
+Jest to możliwe dzięki specjalnym metodom, które można zaimplementować
+w klasie. Poniżej przykład klasy <code>Special</code>, w której zdefiniowano kilka 
+metod specjalnych.</p>
+<div class="codehilite"><pre><span></span><span class="k">class</span> <span class="nc">Special</span><span class="p">:</span>
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
+        <span class="k">pass</span>
+        <span class="c1"># konstruktor</span>
+
+    <span class="k">def</span> <span class="fm">__del__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">pass</span>
+        <span class="c1"># Destruktor – rzadko wykorzystywany</span>
+
+    <span class="k">def</span> <span class="fm">__str__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">pass</span>
+        <span class="c1"># Reprezentacja znakowa; wywoływana przez print i str</span>
+
+    <span class="k">def</span> <span class="fm">__repr__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">pass</span>
+        <span class="c1"># Reprezentacja znakowa; wywoływana przez repr</span>
+        <span class="c1"># eval(repr(a)) powinno być równe a</span>
+
+    <span class="k">def</span> <span class="fm">__getitem__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">i</span><span class="p">):</span>
+        <span class="k">pass</span>
+        <span class="c1"># Indeksacja dla obiektu: b = a[i]</span>
+
+    <span class="k">def</span> <span class="fm">__setitem__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">i</span><span class="p">,</span> <span class="n">v</span><span class="p">):</span>
+        <span class="k">pass</span>
+        <span class="c1"># Przypisanie z wykorzystaniem indeksacji: a[i] = v</span>
+
+    <span class="k">def</span> <span class="fm">__len__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">pass</span>
+        <span class="c1"># Wywoływane przez len(a);  Funkcja powinna zwrócić</span>
+        <span class="c1"># długość obiektu (o ile ma to uzasadnienie)</span>
+
+    <span class="k">def</span> <span class="fm">__eq__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">x</span><span class="p">):</span>
+        <span class="k">pass</span>
+        <span class="c1"># Test self == x; zwraca True lub False</span>
+
+    <span class="k">def</span> <span class="fm">__add__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">b</span><span class="p">):</span>
+        <span class="k">pass</span>
+        <span class="c1"># Definiuje self + b</span>
+
+    <span class="k">def</span> <span class="fm">__sub__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">b</span><span class="p">):</span>
+        <span class="k">pass</span>
+        <span class="c1"># Definiuje self – b</span>
+
+    <span class="k">def</span> <span class="fm">__mul__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">b</span><span class="p">):</span>
+        <span class="k">pass</span>
+        <span class="c1"># Definiuje self * b</span>
+
+    <span class="k">def</span> <span class="fm">__div__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">b</span><span class="p">):</span>
+        <span class="k">pass</span>
+        <span class="c1"># Definiuje self / b</span>
+
+    <span class="k">def</span> <span class="fm">__pow__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">b</span><span class="p">):</span>
+        <span class="k">pass</span>
+        <span class="c1"># Definiuje self ** b</span>
+</pre></div>
+                
+                  
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href="dziedziczenie.html" title="Dziedziczenie" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                Dziedziczenie
+              </span>
+            </div>
+          </a>
+        
+        
+          <a href="about.html" title="About" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                About
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        powered by
+        <a href="https://www.mkdocs.org">MkDocs</a>
+        and
+        <a href="https://squidfunk.github.io/mkdocs-material/">
+          Material for MkDocs</a>
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="assets/javascripts/application.dc02f8ce.js"></script>
+      
+      <script>app.initialize({version:"1.0.4",url:{base:"."}})</script>
+      
+    
+  </body>
+</html>

@@ -309,6 +309,54 @@
 
 
   <li class="md-nav__item">
+    <a href="obiekty.html" title="Obiekty" class="md-nav__link">
+      Obiekty
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="klasy.html" title="Klasy" class="md-nav__link">
+      Klasy
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="dziedziczenie.html" title="Dziedziczenie" class="md-nav__link">
+      Dziedziczenie
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="zaawansowane_oop.html" title="Zaawansowana obiektowość" class="md-nav__link">
+      Zaawansowana obiektowość
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
     <a href="about.html" title="About" class="md-nav__link">
       About
     </a>
@@ -464,9 +512,9 @@ w komórce w Excelu. Różnicą jest jedynie odwoływanie do zmiennych
 </pre></div>
 
 <p>Pozwala to w dalszym kodzie np. wywoływać taką funkcję anonimową po jej, de facto, nazwie:</p>
-<div class="codehilite"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">pitagoras</span> <span class="o">=</span> <span class="k">lambda</span> <span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">:</span>  <span class="p">((</span><span class="n">a</span> <span class="o">*</span> <span class="n">a</span><span class="p">)</span> <span class="o">+</span> <span class="p">(</span><span class="n">b</span> <span class="o">*</span> <span class="n">b</span><span class="p">))</span> <span class="o">**</span> <span class="mf">0.5</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">pitagoras</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">)</span>
-<span class="go">5.0</span>
+<div class="codehilite"><pre><span></span><span class="o">&gt;&gt;&gt;</span> <span class="n">pitagoras</span> <span class="o">=</span> <span class="k">lambda</span> <span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">:</span>  <span class="p">((</span><span class="n">a</span> <span class="o">*</span> <span class="n">a</span><span class="p">)</span> <span class="o">+</span> <span class="p">(</span><span class="n">b</span> <span class="o">*</span> <span class="n">b</span><span class="p">))</span> <span class="o">**</span> <span class="mf">0.5</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">pitagoras</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">)</span>
+<span class="mf">5.0</span>
 </pre></div>
 
 <div class="admonition question">
@@ -494,23 +542,23 @@ anonimowe i pracujących na zbiorach danych:</p>
 </ol>
 <h3 id="filtrowanie">Filtrowanie</h3>
 <p>Dla przykładów użyję prostego zbioru danych temperatury:</p>
-<div class="codehilite"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">temperatury</span> <span class="o">=</span> <span class="p">[</span>
-<span class="go">    37.6, 35.8, 37.6, 33.4, 34.1, 37.1, 35.9, 34.1, 37.1, 40.5, 38.5, 37.6,</span>
-<span class="go">    35.8, 34.5, 36.4, 38.3, 37.5, 37.7, 34.0, 35.3, 35.7, 38.9, 34.8, 34.1,</span>
-<span class="go">    39.6, 35.4, 34.7, 37.6, 38.4, 36.4, 39.8, 39.1, 37.1, 35.6, 36.8, 37.6,</span>
-<span class="go">    36.7, 40.0, 38.0, 34.1, 35.5, 38.5, 36.1, 32.6, 32.9, 34.5, 41.0, 38.3,</span>
-<span class="go">    33.7, 38.7, 36.9, 36.2, 33.7, 38.3, 35.3, 38.3, 40.1, 39.3, 38.2, 37.6,</span>
-<span class="go">    39.1, 37.1, 34.4, 38.7, 35.8, 38.2, 38.2, 33.1, 37.8, 36.5, 37.6, 37.4,</span>
-<span class="go">    34.3, 37.7, 36.0, 37.5, 37.6, 36.5, 31.3, 37.7, 40.3, 39.5, 35.7, 38.1,</span>
-<span class="go">    34.7, 36.5, 34.3, 38.0, 37.0, 38.5, 39.4, 37.6, 41.7, 40.0, 38.4, 38.9,</span>
-<span class="go">    34.2, 40.2, 34.3, 35.3</span>
-<span class="go">]</span>
+<div class="codehilite"><pre><span></span><span class="o">&gt;&gt;&gt;</span> <span class="n">temperatury</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="mf">37.6</span><span class="p">,</span> <span class="mf">35.8</span><span class="p">,</span> <span class="mf">37.6</span><span class="p">,</span> <span class="mf">33.4</span><span class="p">,</span> <span class="mf">34.1</span><span class="p">,</span> <span class="mf">37.1</span><span class="p">,</span> <span class="mf">35.9</span><span class="p">,</span> <span class="mf">34.1</span><span class="p">,</span> <span class="mf">37.1</span><span class="p">,</span> <span class="mf">40.5</span><span class="p">,</span> <span class="mf">38.5</span><span class="p">,</span> <span class="mf">37.6</span><span class="p">,</span>
+    <span class="mf">35.8</span><span class="p">,</span> <span class="mf">34.5</span><span class="p">,</span> <span class="mf">36.4</span><span class="p">,</span> <span class="mf">38.3</span><span class="p">,</span> <span class="mf">37.5</span><span class="p">,</span> <span class="mf">37.7</span><span class="p">,</span> <span class="mf">34.0</span><span class="p">,</span> <span class="mf">35.3</span><span class="p">,</span> <span class="mf">35.7</span><span class="p">,</span> <span class="mf">38.9</span><span class="p">,</span> <span class="mf">34.8</span><span class="p">,</span> <span class="mf">34.1</span><span class="p">,</span>
+    <span class="mf">39.6</span><span class="p">,</span> <span class="mf">35.4</span><span class="p">,</span> <span class="mf">34.7</span><span class="p">,</span> <span class="mf">37.6</span><span class="p">,</span> <span class="mf">38.4</span><span class="p">,</span> <span class="mf">36.4</span><span class="p">,</span> <span class="mf">39.8</span><span class="p">,</span> <span class="mf">39.1</span><span class="p">,</span> <span class="mf">37.1</span><span class="p">,</span> <span class="mf">35.6</span><span class="p">,</span> <span class="mf">36.8</span><span class="p">,</span> <span class="mf">37.6</span><span class="p">,</span>
+    <span class="mf">36.7</span><span class="p">,</span> <span class="mf">40.0</span><span class="p">,</span> <span class="mf">38.0</span><span class="p">,</span> <span class="mf">34.1</span><span class="p">,</span> <span class="mf">35.5</span><span class="p">,</span> <span class="mf">38.5</span><span class="p">,</span> <span class="mf">36.1</span><span class="p">,</span> <span class="mf">32.6</span><span class="p">,</span> <span class="mf">32.9</span><span class="p">,</span> <span class="mf">34.5</span><span class="p">,</span> <span class="mf">41.0</span><span class="p">,</span> <span class="mf">38.3</span><span class="p">,</span>
+    <span class="mf">33.7</span><span class="p">,</span> <span class="mf">38.7</span><span class="p">,</span> <span class="mf">36.9</span><span class="p">,</span> <span class="mf">36.2</span><span class="p">,</span> <span class="mf">33.7</span><span class="p">,</span> <span class="mf">38.3</span><span class="p">,</span> <span class="mf">35.3</span><span class="p">,</span> <span class="mf">38.3</span><span class="p">,</span> <span class="mf">40.1</span><span class="p">,</span> <span class="mf">39.3</span><span class="p">,</span> <span class="mf">38.2</span><span class="p">,</span> <span class="mf">37.6</span><span class="p">,</span>
+    <span class="mf">39.1</span><span class="p">,</span> <span class="mf">37.1</span><span class="p">,</span> <span class="mf">34.4</span><span class="p">,</span> <span class="mf">38.7</span><span class="p">,</span> <span class="mf">35.8</span><span class="p">,</span> <span class="mf">38.2</span><span class="p">,</span> <span class="mf">38.2</span><span class="p">,</span> <span class="mf">33.1</span><span class="p">,</span> <span class="mf">37.8</span><span class="p">,</span> <span class="mf">36.5</span><span class="p">,</span> <span class="mf">37.6</span><span class="p">,</span> <span class="mf">37.4</span><span class="p">,</span>
+    <span class="mf">34.3</span><span class="p">,</span> <span class="mf">37.7</span><span class="p">,</span> <span class="mf">36.0</span><span class="p">,</span> <span class="mf">37.5</span><span class="p">,</span> <span class="mf">37.6</span><span class="p">,</span> <span class="mf">36.5</span><span class="p">,</span> <span class="mf">31.3</span><span class="p">,</span> <span class="mf">37.7</span><span class="p">,</span> <span class="mf">40.3</span><span class="p">,</span> <span class="mf">39.5</span><span class="p">,</span> <span class="mf">35.7</span><span class="p">,</span> <span class="mf">38.1</span><span class="p">,</span>
+    <span class="mf">34.7</span><span class="p">,</span> <span class="mf">36.5</span><span class="p">,</span> <span class="mf">34.3</span><span class="p">,</span> <span class="mf">38.0</span><span class="p">,</span> <span class="mf">37.0</span><span class="p">,</span> <span class="mf">38.5</span><span class="p">,</span> <span class="mf">39.4</span><span class="p">,</span> <span class="mf">37.6</span><span class="p">,</span> <span class="mf">41.7</span><span class="p">,</span> <span class="mf">40.0</span><span class="p">,</span> <span class="mf">38.4</span><span class="p">,</span> <span class="mf">38.9</span><span class="p">,</span>
+    <span class="mf">34.2</span><span class="p">,</span> <span class="mf">40.2</span><span class="p">,</span> <span class="mf">34.3</span><span class="p">,</span> <span class="mf">35.3</span>
+<span class="p">]</span>
 </pre></div>
 
 <p>Użyjmy teraz funkcji filtrującej, żeby znaleźć wszystkie wartości większe
 lub równe <code>40.0</code>:</p>
-<div class="codehilite"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="nb">list</span><span class="p">(</span><span class="nb">filter</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">x</span><span class="o">&gt;=</span><span class="mf">40.0</span><span class="p">,</span>  <span class="n">temperatury</span><span class="p">))</span>
-<span class="go">[40.5, 40.0, 41.0, 40.1, 40.3, 41.7, 40.0, 40.2]</span>
+<div class="codehilite"><pre><span></span><span class="o">&gt;&gt;&gt;</span> <span class="nb">list</span><span class="p">(</span><span class="nb">filter</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">x</span><span class="o">&gt;=</span><span class="mf">40.0</span><span class="p">,</span>  <span class="n">temperatury</span><span class="p">))</span>
+<span class="p">[</span><span class="mf">40.5</span><span class="p">,</span> <span class="mf">40.0</span><span class="p">,</span> <span class="mf">41.0</span><span class="p">,</span> <span class="mf">40.1</span><span class="p">,</span> <span class="mf">40.3</span><span class="p">,</span> <span class="mf">41.7</span><span class="p">,</span> <span class="mf">40.0</span><span class="p">,</span> <span class="mf">40.2</span><span class="p">]</span>
 </pre></div>
 
 <div class="admonition question">
@@ -523,23 +571,23 @@ lub równe <code>40.0</code>:</p>
 </div>
 <h3 id="aplikowanie">Aplikowanie</h3>
 <p>Zacznijmy od znalezienia średniej wartości temperatury:</p>
-<div class="codehilite"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">statistics</span> <span class="kn">import</span> <span class="n">mean</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">sr_temp</span> <span class="o">=</span> <span class="n">mean</span><span class="p">(</span><span class="n">temperatury</span><span class="p">)</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">sr_temp</span>
-<span class="go">36.9</span>
+<div class="codehilite"><pre><span></span><span class="o">&gt;&gt;&gt;</span> <span class="kn">from</span> <span class="nn">statistics</span> <span class="kn">import</span> <span class="n">mean</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">sr_temp</span> <span class="o">=</span> <span class="n">mean</span><span class="p">(</span><span class="n">temperatury</span><span class="p">)</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">sr_temp</span>
+<span class="mf">36.9</span>
 </pre></div>
 
 <p>Teraz można łatwo obliczyć wartości odchylenia od średniej zbioru -
 przydatne w statystyce:</p>
-<div class="codehilite"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="nb">list</span><span class="p">(</span><span class="nb">map</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">x</span> <span class="o">-</span> <span class="n">sr_temp</span><span class="p">,</span> <span class="n">temperatury</span><span class="p">))</span>
-<span class="go">[0.7, -1.1, 0.7, -3.5, -2.8, 0.2, -1.0, -2.8, 0.2, 3.6, 1.6, 0.7, -1.1,</span>
-<span class="go"> -2.4, -0.5, 1.4, 0.6, 0.8, -2.9, -1.6, -1.2, 2.0, -2.1, -2.8, 2.7, -1.5, </span>
-<span class="go"> -2.2, 0.7, 1.5, -0.5, 2.9, 2.2, 0.2, -1.3, -0.1, 0.7, -0.2, 3.1, 1.1, </span>
-<span class="go"> -2.8, -1.4, 1.6, -0.8, -4.3, -4.0, -2.4, 4.1, 1.4, -3.2, 1.8, 0.0, -0.7, </span>
-<span class="go"> -3.2, 1.4, -1.6, 1.4, 3.2, 2.4, 1.3, 0.7, 2.2, 0.2, -2.5, 1.8, -1.1, 1.3, </span>
-<span class="go"> 1.3, -3.8, 0.9, -0.4, 0.7, 0.5, -2.6, 0.8, -0.9, 0.6, 0.7, -0.4, -5.6, </span>
-<span class="go"> 0.8, 3.4, 2.6, -1.2, 1.2, -2.2, -0.4, -2.6, 1.1, 0.1, 1.6, 2.5, 0.7, 4.8, </span>
-<span class="go"> 3.1, 1.5, 2.0, -2.7, 3.3, -2.6, -1.6]</span>
+<div class="codehilite"><pre><span></span><span class="o">&gt;&gt;&gt;</span> <span class="nb">list</span><span class="p">(</span><span class="nb">map</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">x</span> <span class="o">-</span> <span class="n">sr_temp</span><span class="p">,</span> <span class="n">temperatury</span><span class="p">))</span>
+<span class="p">[</span><span class="mf">0.7</span><span class="p">,</span> <span class="o">-</span><span class="mf">1.1</span><span class="p">,</span> <span class="mf">0.7</span><span class="p">,</span> <span class="o">-</span><span class="mf">3.5</span><span class="p">,</span> <span class="o">-</span><span class="mf">2.8</span><span class="p">,</span> <span class="mf">0.2</span><span class="p">,</span> <span class="o">-</span><span class="mf">1.0</span><span class="p">,</span> <span class="o">-</span><span class="mf">2.8</span><span class="p">,</span> <span class="mf">0.2</span><span class="p">,</span> <span class="mf">3.6</span><span class="p">,</span> <span class="mf">1.6</span><span class="p">,</span> <span class="mf">0.7</span><span class="p">,</span> <span class="o">-</span><span class="mf">1.1</span><span class="p">,</span>
+ <span class="o">-</span><span class="mf">2.4</span><span class="p">,</span> <span class="o">-</span><span class="mf">0.5</span><span class="p">,</span> <span class="mf">1.4</span><span class="p">,</span> <span class="mf">0.6</span><span class="p">,</span> <span class="mf">0.8</span><span class="p">,</span> <span class="o">-</span><span class="mf">2.9</span><span class="p">,</span> <span class="o">-</span><span class="mf">1.6</span><span class="p">,</span> <span class="o">-</span><span class="mf">1.2</span><span class="p">,</span> <span class="mf">2.0</span><span class="p">,</span> <span class="o">-</span><span class="mf">2.1</span><span class="p">,</span> <span class="o">-</span><span class="mf">2.8</span><span class="p">,</span> <span class="mf">2.7</span><span class="p">,</span> <span class="o">-</span><span class="mf">1.5</span><span class="p">,</span> 
+ <span class="o">-</span><span class="mf">2.2</span><span class="p">,</span> <span class="mf">0.7</span><span class="p">,</span> <span class="mf">1.5</span><span class="p">,</span> <span class="o">-</span><span class="mf">0.5</span><span class="p">,</span> <span class="mf">2.9</span><span class="p">,</span> <span class="mf">2.2</span><span class="p">,</span> <span class="mf">0.2</span><span class="p">,</span> <span class="o">-</span><span class="mf">1.3</span><span class="p">,</span> <span class="o">-</span><span class="mf">0.1</span><span class="p">,</span> <span class="mf">0.7</span><span class="p">,</span> <span class="o">-</span><span class="mf">0.2</span><span class="p">,</span> <span class="mf">3.1</span><span class="p">,</span> <span class="mf">1.1</span><span class="p">,</span> 
+ <span class="o">-</span><span class="mf">2.8</span><span class="p">,</span> <span class="o">-</span><span class="mf">1.4</span><span class="p">,</span> <span class="mf">1.6</span><span class="p">,</span> <span class="o">-</span><span class="mf">0.8</span><span class="p">,</span> <span class="o">-</span><span class="mf">4.3</span><span class="p">,</span> <span class="o">-</span><span class="mf">4.0</span><span class="p">,</span> <span class="o">-</span><span class="mf">2.4</span><span class="p">,</span> <span class="mf">4.1</span><span class="p">,</span> <span class="mf">1.4</span><span class="p">,</span> <span class="o">-</span><span class="mf">3.2</span><span class="p">,</span> <span class="mf">1.8</span><span class="p">,</span> <span class="mf">0.0</span><span class="p">,</span> <span class="o">-</span><span class="mf">0.7</span><span class="p">,</span> 
+ <span class="o">-</span><span class="mf">3.2</span><span class="p">,</span> <span class="mf">1.4</span><span class="p">,</span> <span class="o">-</span><span class="mf">1.6</span><span class="p">,</span> <span class="mf">1.4</span><span class="p">,</span> <span class="mf">3.2</span><span class="p">,</span> <span class="mf">2.4</span><span class="p">,</span> <span class="mf">1.3</span><span class="p">,</span> <span class="mf">0.7</span><span class="p">,</span> <span class="mf">2.2</span><span class="p">,</span> <span class="mf">0.2</span><span class="p">,</span> <span class="o">-</span><span class="mf">2.5</span><span class="p">,</span> <span class="mf">1.8</span><span class="p">,</span> <span class="o">-</span><span class="mf">1.1</span><span class="p">,</span> <span class="mf">1.3</span><span class="p">,</span> 
+ <span class="mf">1.3</span><span class="p">,</span> <span class="o">-</span><span class="mf">3.8</span><span class="p">,</span> <span class="mf">0.9</span><span class="p">,</span> <span class="o">-</span><span class="mf">0.4</span><span class="p">,</span> <span class="mf">0.7</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">,</span> <span class="o">-</span><span class="mf">2.6</span><span class="p">,</span> <span class="mf">0.8</span><span class="p">,</span> <span class="o">-</span><span class="mf">0.9</span><span class="p">,</span> <span class="mf">0.6</span><span class="p">,</span> <span class="mf">0.7</span><span class="p">,</span> <span class="o">-</span><span class="mf">0.4</span><span class="p">,</span> <span class="o">-</span><span class="mf">5.6</span><span class="p">,</span> 
+ <span class="mf">0.8</span><span class="p">,</span> <span class="mf">3.4</span><span class="p">,</span> <span class="mf">2.6</span><span class="p">,</span> <span class="o">-</span><span class="mf">1.2</span><span class="p">,</span> <span class="mf">1.2</span><span class="p">,</span> <span class="o">-</span><span class="mf">2.2</span><span class="p">,</span> <span class="o">-</span><span class="mf">0.4</span><span class="p">,</span> <span class="o">-</span><span class="mf">2.6</span><span class="p">,</span> <span class="mf">1.1</span><span class="p">,</span> <span class="mf">0.1</span><span class="p">,</span> <span class="mf">1.6</span><span class="p">,</span> <span class="mf">2.5</span><span class="p">,</span> <span class="mf">0.7</span><span class="p">,</span> <span class="mf">4.8</span><span class="p">,</span> 
+ <span class="mf">3.1</span><span class="p">,</span> <span class="mf">1.5</span><span class="p">,</span> <span class="mf">2.0</span><span class="p">,</span> <span class="o">-</span><span class="mf">2.7</span><span class="p">,</span> <span class="mf">3.3</span><span class="p">,</span> <span class="o">-</span><span class="mf">2.6</span><span class="p">,</span> <span class="o">-</span><span class="mf">1.6</span><span class="p">]</span>
 </pre></div>
 
 <div class="admonition info">
@@ -558,17 +606,17 @@ liczby i średniej arytmetycznej całego zbioru.</p>
 zbioru wartości do jednej wartości. Żeby to lepiej zobrazować, pokażę dwa 
 przykłady użycia <code>reduce</code> do obliczenia sumy wartości i ich iloczynu.</p>
 <p>Przykład 1: obliczenie sumy</p>
-<div class="codehilite"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">functools</span> <span class="kn">import</span> <span class="nb">reduce</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="nb">reduce</span><span class="p">(</span><span class="k">lambda</span> <span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">:</span> <span class="n">a</span> <span class="o">+</span> <span class="n">b</span><span class="p">,</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">])</span>
-<span class="go">15</span>
+<div class="codehilite"><pre><span></span><span class="o">&gt;&gt;&gt;</span> <span class="kn">from</span> <span class="nn">functools</span> <span class="kn">import</span> <span class="nb">reduce</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="nb">reduce</span><span class="p">(</span><span class="k">lambda</span> <span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">:</span> <span class="n">a</span> <span class="o">+</span> <span class="n">b</span><span class="p">,</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">])</span>
+<span class="mi">15</span>
 </pre></div>
 
 <p>Wykorzystanie funkcji <code>reduce</code> w powyższym przykładzie sprowadza się tak
 naprawdę do:</p>
 <p><code>((((1 + 2) + 3) + 4) + 5)</code></p>
 <p>Przykład 2: obliczenie iloczynu</p>
-<div class="codehilite"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="nb">reduce</span><span class="p">(</span><span class="k">lambda</span> <span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">:</span> <span class="n">a</span> <span class="o">*</span> <span class="n">b</span><span class="p">,</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">])</span>
-<span class="go">24</span>
+<div class="codehilite"><pre><span></span><span class="o">&gt;&gt;&gt;</span> <span class="nb">reduce</span><span class="p">(</span><span class="k">lambda</span> <span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">:</span> <span class="n">a</span> <span class="o">*</span> <span class="n">b</span><span class="p">,</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">])</span>
+<span class="mi">24</span>
 </pre></div>
 
 <p>Sprowadza się to do: <code>(((1 * 2) * 3) * 4)</code>.</p>
@@ -678,13 +726,13 @@ obliczane przy przechodzeniu przez nie, np. w formie pętli <code>for</code>:</p
           </a>
         
         
-          <a href="about.html" title="About" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="obiekty.html" title="Obiekty" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
               <span class="md-flex__ellipsis">
                 <span class="md-footer-nav__direction">
                   Next
                 </span>
-                About
+                Obiekty
               </span>
             </div>
             <div class="md-flex__cell md-flex__cell--shrink">
