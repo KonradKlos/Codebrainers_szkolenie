@@ -12,11 +12,11 @@ class KontoBankowe:
     
     def wplac(self, kwota):
         self.stan += kwota
-        print("Dla konta",self.nazwisko,"wpłacono:", self.stan)
+        print("Dla konta",self.nazwisko,"wpłacono:", kwota)
 
     def wyplac(self, kwota):
         self.stan -= kwota
-        print("Dla konta",self.nazwisko,"wypłacono:", self.stan)
+        print("Dla konta",self.nazwisko,"wypłacono:", kwota)
 
     def przelew (self, Wartosc_przelewu):
         print("Wprowadź kwotę przelewu dla", self.nazwisko, ":") 
@@ -46,6 +46,9 @@ print("-------------------------------------------------")
 
 jk.przelew(0)
 jn.przelew(0)
+
+print("-------------------------------------------------")
+print("Saldo po operacjach:")
 
 jk.info()
 jn.info()
