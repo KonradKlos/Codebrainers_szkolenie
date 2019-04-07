@@ -1,4 +1,3 @@
-kwadraty = [el**2 for el in range (1,10000) if el % 5 ==0 or  el % 9 ==0]
-kwadraty = map(lambda x: x % 5 ==0 and x % 9 ==0)
-print(kwadraty)
-
+kwadraty = [x**2 for x in range (0,101) if x % 5 ==0 or  x % 9 ==0]
+kwadraty2 = [y for y in kwadraty if (y% 5 ==0) and (y% 9 == 0)]
+print(kwadraty2)
